@@ -20,7 +20,7 @@ Before building reports or tracking high-level KPIs, auditing raw transaction in
 * **The Top-Line Illusion:** Raw booked sales indicated **$33.05M** across ~66K orders.
 * **The Reality:** Digging into order statuses revealed **2,855 non-viable transactions** marked as `CANCELED` (1,367) or `SUSPECTED_FRAUD` (1,488)—representing **$1.41M in unrealized revenue**.
 * **Database Fix:** Rather than applying cosmetic filters in reporting tools, these non-viable records were eliminated upstream within modular PostgreSQL analytical views.
-* **Clean Baseline:** Established a validated production baseline of **$31.64M net revenue** across **63K fulfilled orders**.
+* **Clean Baseline:** Established a validated production baseline of **$31.64M net revenue** across **63K Valid Orders**.
 
 ---
 
@@ -62,7 +62,7 @@ This empirical view revealed that **$15.5M in cumulative historical revenue** (r
 
 Analyzing fulfillment operations across ~63K shipments revealed unexpected operational breakdowns:
 
-* **The Premium Shipping Paradox:** Customers paying extra for **First Class shipping experienced a 0.00% On-Time Delivery rate** across ~28,000 shipments, missing scheduled delivery dates by an average of 1.0 full day.
+* **The Premium Shipping Paradox:** Customers paying extra for **First Class shipping experienced a 0.00% On-Time Delivery rate** across across ~28,000 shipment item records, missing scheduled delivery dates by an average of 1.0 full day.
 * **The "Average Trap" in Standard Class:** Standard Class showed an average lead time variance of `0.00 days`. However, early deliveries (-1 to -2 days) were mathematically canceling out late deliveries (+1 to +2 days) in the mean. A binary compliance check revealed that **39.77% of Standard orders actually arrived late**. In operations, never rely on net averages alone without checking binary compliance.
 
 ---
