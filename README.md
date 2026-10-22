@@ -1,7 +1,8 @@
 # Retail & Supply Chain Analytics: Uncovering Revenue Leakage & Operational Bottlenecks 
-![Dashboard Overview](dashboard_overview.png)
+
 > **An end-to-end analytics project exploring PostgreSQL and Power BI, built with an AI analytical thought partner.**
 
+![Dashboard Overview](dashboard_overview.png)
 ---
 
 ### Project Background & Purpose
