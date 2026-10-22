@@ -2,7 +2,7 @@
 
 > **An end-to-end analytics project exploring PostgreSQL and Power BI, built with an AI analytical thought partner.**
 
-![Dashboard Overview](dashboard_overview.png)
+![Dashboard Overview](dashboard_overview.jpg)
 ---
 
 ### Project Background & Purpose
